@@ -1,0 +1,33 @@
+{
+  "author": {
+    "name": "Sustainable Solutions (NZ) Ltd.",
+    "email": "info@sussol.net"
+  },
+  "name": "sussol-utilities",
+  "version": "0.0.1",
+  "private": true,
+  "license": "proprietary",
+  "description": "Utility code for use across Sussol projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sussol/sussol-utilities.git"
+  },
+  "url": "http://github.com/sussol/sussol-utilities",
+  "homepage": "http://sussol.net",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "sha256": "^0.2.0",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.2",
+    "babel-polyfill": "^6.9.1",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^1.2.0",
+    "eslint-plugin-react": "^5.2.2",
+    "promise-sync-es6": "0.0.4"
+  }
+}
