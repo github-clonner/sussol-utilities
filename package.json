@@ -5,9 +5,9 @@
   },
   "name": "sussol-utilities",
   "main": "lib/index.js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "proprietary",
-  "description": "Utility code for use across Sussol projects",
+  "description": "Utility javascript code for use across Sussol projects",
   "repository": {
     "type": "git",
     "url": "https://github.com/sussol/sussol-utilities.git"

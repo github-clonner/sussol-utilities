@@ -4,3 +4,4 @@ export {
   getAuthHeader,
   hashPassword,
 } from './authenticationUtils';
+export { Scheduler } from './Scheduler';
