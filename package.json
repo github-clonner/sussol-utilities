@@ -5,7 +5,7 @@
   },
   "name": "sussol-utilities",
   "main": "lib/index.js",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "license": "proprietary",
   "description": "Utility code for use across Sussol projects",
   "repository": {
@@ -15,13 +15,8 @@
   "url": "http://github.com/sussol/sussol-utilities",
   "homepage": "http://sussol.net",
   "scripts": {
-    "prepublish": "babel src --out-dir lib"
-  },
-  "babel": {
-    "presets": [
-      "stage-0",
-      "es2015"
-    ]
+    "build": "babel --presets stage-0,es2015 src --out-dir lib",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "base-64": "^0.1.0",
