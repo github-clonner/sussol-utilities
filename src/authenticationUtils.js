@@ -44,7 +44,7 @@ export async function authenticateAsync(authURL, username, password) {
     throw new Error(CONNECTION_FAILURE);
   }
 
-  if (responseJson.error) { // Most often username/password invalid, but pass up 4D error
+  if (responseJson.error) { // Most often username/password invalid, but pass up server error
     throw new Error(responseJson.error);
   }
   return responseJson;
