@@ -1,8 +1,6 @@
-jest.unmock('../Scheduler');
-jest.unmock('sinon');
-
 import { Scheduler } from '../Scheduler';
 import sinon from 'sinon';
+jest.useFakeTimers();
 
 const MAX_INTERVAL = 100000;
 const MIN_INTERVAL = 10;

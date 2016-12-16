@@ -16,7 +16,11 @@
   "homepage": "http://sussol.net",
   "scripts": {
     "build": "babel --presets stage-0,es2015 src --out-dir lib",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true
   },
   "dependencies": {
     "base-64": "^0.1.0",
@@ -38,10 +42,10 @@
     "eslint-plugin-import": "^1.14.0",
     "eslint-plugin-jsx-a11y": "^1.2.0",
     "eslint-plugin-react": "^5.2.2",
+    "jest": "^18.0.0",
     "promise-sync-es6": "0.0.4",
-    "source-map-loader": "^0.1.5",
-    "webpack": "^1.12.14",
-    "whatwg-fetch": "^0.11.0"
+    "sinon": "^1.17.6",
+    "webpack": "^1.12.14"
   },
   "peerDependencies": {
     "babel-polyfill": "^6.9.1"
