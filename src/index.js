@@ -3,7 +3,7 @@ export {
   authenticateAsync,
   getAuthHeader,
   hashPassword,
-} from './authenticationUtils';
+} from 'authentication-utilities';
 export { Scheduler } from './Scheduler';
 export { formatDate, formatDateAndTime, truncateString } from './formatters';
 export { parsePositiveInteger } from './parsers';
