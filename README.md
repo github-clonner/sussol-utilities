@@ -1,8 +1,10 @@
 # sussol-utilities
-Utility code used across sussol repositories, in four different categories
 
 ## Installation
 ```npm install --save sussol-utilities```
+
+##Usage
+Utility code used across sussol repositories, in four different categories
 
 ### Authentication
 Re-exports the three methods from [authentication-utilities](https://github.com/sussol/authentication-utilities)
