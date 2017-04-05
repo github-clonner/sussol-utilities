@@ -25,7 +25,8 @@ export function parsePositiveFloat(numberString) {
 * format month/year, where month is 0-12 and year is 0-9999. If year is not specified
 * in full assumed 21st century
 * @param  {string}  dateString  The string to be parsed, as per description
-* @return {Date}  js Date Object, with day set to last day of the month
+* @return {Date}  js Date Object, with day set to last day of the month, or null if
+*                                                                           invalid
 */
 export function parseExpiryDate(dateString) {
   if (!dateString) return null;
