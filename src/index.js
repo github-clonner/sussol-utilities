@@ -5,5 +5,14 @@ export {
   hashPassword,
 } from 'authentication-utilities';
 export { Scheduler } from './Scheduler';
-export { formatDate, formatDateAndTime, truncateString } from './formatters';
-export { parsePositiveInteger } from './parsers';
+export {
+  formatDate,
+  formatDateAndTime,
+  truncateString,
+  formatExpiryDate,
+} from './formatters';
+export {
+  parsePositiveInteger,
+  parsePositiveFloat,
+  parseExpiryDate,
+ } from './parsers';
