@@ -33,6 +33,19 @@ export function formatDateAndTime(date, format) {
 }
 
 /**
+* return Date Object as a string in format mm/yyyy
+* @param  {Date}   date    The date to format and return as a string
+* @return {string}         The formatted string
+*/
+export function formatExpiryDate(date) {
+  if (!date) return '';
+
+  let month = (date.getMonth() + 1).toString();
+  month = month.length === 1 ? `0${month}` : month;
+  return `${month}/${date.getFullYear()}`;
+}
+
+/**
 * Returns the string chopped off at maxLength, with ... replacing the last three characters if it
 * overflowed
 * @param  {string}   string     The string to be truncated
