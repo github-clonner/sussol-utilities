@@ -1,7 +1,7 @@
 /**
 * Returns the date object passed in as a string in either the format dd/mm/yyyy or dd.mm.yyyy
 * @param  {Date}   date    The date to format and return as a string
-* @param  {string} format  Either 'slashes', 'dots', or undefined (will use slashes)
+* @param  {string} format  Either 'slashes', 'dots', 'dashes', or undefined (will use slashes)
 * @return {string}         The formatted string
 */
 export function formatDate(date, format) {
@@ -12,6 +12,8 @@ export function formatDate(date, format) {
       return `${date.getDate()}/${getMonth(date)}/${date.getFullYear()}`;
     case 'dots':
       return `${date.getDate()}.${getMonth(date)}.${date.getFullYear()}`;
+    case 'dashes':
+      return `${date.getDate()}-${getMonth(date)}-${date.getFullYear()}`;
   }
 }
 
@@ -22,25 +24,12 @@ function getMonth(date) {
 /**
 * Returns the date object passed in as a formatted string showing the date and time
 * @param  {Date}   date    The date (including time) to format and return as a string
-* @param  {string} format  Either 'slashes', 'dots', or undefined (will use slashes)
+* @param  {string} format  Either 'slashes', 'dots', 'dashes', or undefined (will use slashes)
 * @return {string}         The formatted string
 */
 export function formatDateAndTime(date, format) {
   const time = date.toLocaleTimeString();
   return `${formatDate(date, format)} ${time.substring(0, time.length - 3)}`;
-}
-
-/**
-* return Date Object as a string in format mm/yyyy
-* @param  {Date}   date    The date to format and return as a string
-* @return {string}         The formatted string
-*/
-export function formatExpiryDate(date) {
-  if (!date) return '';
-
-  let month = (date.getMonth() + 1).toString();
-  month = month.length === 1 ? `0${month}` : month;
-  return `${month}/${date.getFullYear()}`;
 }
 
 /**
