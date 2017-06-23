@@ -5,7 +5,7 @@
   },
   "name": "sussol-utilities",
   "main": "lib/index.js",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "license": "proprietary",
   "description": "Utility javascript code for use across Sussol projects",
   "repository": {
