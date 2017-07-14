@@ -26,8 +26,8 @@ export class Scheduler {
   * the Scheduler instance goes out of scope
   */
   clearAll() {
-    for (const intervalId of this.intervalIds) {
-      clearInterval(intervalId);
+    for (let i = 0; i < this.intervalIds.length; i++) {
+      clearInterval(this.intervalIds[i]);
     }
     this.intervalIds = [];
   }
