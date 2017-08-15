@@ -10,6 +10,7 @@ export {
   formatDateAndTime,
   truncateString,
   formatExpiryDate,
+  formatPlural,
 } from './formatters';
 export {
   parsePositiveInteger,

@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 /**
 * Returns the date object passed in as a string in either the format dd/mm/yyyy or dd.mm.yyyy
 * @param  {Date}   date    The date to format and return as a string
@@ -8,6 +10,7 @@ export function formatDate(date, format) {
   if (!date || typeof date !== 'object') return null;
   switch (format) {
     default:
+      return moment(date).format(format);
     case 'slashes':
       return `${date.getDate()}/${getMonth(date)}/${date.getFullYear()}`;
     case 'dots':
@@ -56,3 +59,12 @@ export function truncateString(string, maxLength) {
   if (string.length <= maxLength) return string;
   return `${string.substring(0, maxLength - 3)}...`;
 }
+
+/**
+ *
+ * @param {string} singular   The singular version of the string
+ * @param {string} plural     The plural version of the string
+ * @param {number} count      The number that determines whether to use singular or plural form
+ */
+export const formatPlural = (singular, plural, count) =>
+  (count === 1 ? singular.replace('@count', count) : plural.replace('@count', count));
