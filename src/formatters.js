@@ -6,7 +6,7 @@ import moment from 'moment';
 * @param  {string} format  Either 'slashes', 'dots', 'dashes', or undefined (will use slashes)
 * @return {string}         The formatted string
 */
-export function formatDate(date, format) {
+export function formatDate(date, format = 'slashes') {
   if (!date || typeof date !== 'object') return null;
   switch (format) {
     default:
