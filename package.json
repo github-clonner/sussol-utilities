@@ -5,7 +5,7 @@
   },
   "name": "sussol-utilities",
   "main": "lib/index.js",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "license": "MIT",
   "description": "Utility javascript code for use across Sussol projects",
   "repository": {
@@ -19,7 +19,7 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "authentication-utilities": "^0.1.0",
+    "authentication-utilities": "^0.1.4",
     "base-64": "^0.1.0",
     "exports-loader": "^0.6.3",
     "imports-loader": "^0.6.5",
